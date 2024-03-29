@@ -17,61 +17,40 @@ Clone the repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/wiemmmehri/mini_projetSR.git
 Navigate to the project directory:
 
-bash
-Copy code
+
 cd your-repository-name
+
+
 Java RMI
 Deploying the RMI Server
 Compile the Java files:
-Copy code
 javac RMI/*.java
 Start the RMI registry:
-Copy code
 rmiregistry &
 Run the server:
-arduino
-Copy code
 java RMI.Server
-Testing the RMI Client
 Run the client application:
-arduino
-Copy code
 java RMI.Client
 Follow the on-screen instructions to add, delete, and list tasks.
-gRPC
-Generating gRPC Code
-Navigate to the gRPC directory:
-bash
-Copy code
+
+
+gRPC:
 cd gRPC
-Generate the gRPC stubs:
-python
-Copy code
 mvn compile
-Running the gRPC Server
-bash
-Copy code
 mvn exec:java -Dexec.mainClass="gRPC.Server"
-Running the gRPC Client
-bash
-Copy code
 mvn exec:java -Dexec.mainClass="gRPC.Client"
+
+
+
 Sockets
-Starting the Chat Server
-Navigate to the Sockets directory:
-bash
-Copy code
+
 cd Sockets
 Compile and run the server:
-Copy code
 javac ChatServer.java
-java ChatServer
 Connecting with the Chat Client
 Open a new terminal window for each client.
 Compile and run the client:
-Copy code
 javac ChatClient.java
-java ChatClient
